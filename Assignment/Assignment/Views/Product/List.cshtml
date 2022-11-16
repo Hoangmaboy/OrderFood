@@ -1,0 +1,43 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using Assignment.Models
+<style>
+    table{
+        display:inline-block;
+    }
+    img{
+        width:300px;
+    }
+</style>
+<h1>Order Food</h1>
+<button><a href="/Home/Index">Homepage</a></button><br />
+
+<button><a href="/Order/ListOfOrder/1">Cart [ @ViewBag.numberInCart ]</a></button>
+
+<div>
+    <table>
+        <tbody>
+            @foreach (Product p in ViewBag.products)
+            {
+                <tr>
+                    <td>@p.ProductName</td>
+                </tr>
+                <tr>
+                    <td><img src="@p.ImageUrl" alt="Food Image"/></td>
+                </tr>
+                <tr>
+                    <td>@p.Description</td>
+                </tr>
+                <tr>
+                    <td>Price: @p.Price</td>
+                </tr>
+                <tr>
+                    <td><button><a href="/Product/AddToCart/@p.ProductId">Add to Cart</a></button></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

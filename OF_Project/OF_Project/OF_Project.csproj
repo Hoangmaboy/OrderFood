@@ -1,0 +1,97 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\css\bootstrap.css" />
+    <Content Remove="wwwroot\css\font-awesome.min.css" />
+    <Content Remove="wwwroot\css\responsive.css" />
+    <Content Remove="wwwroot\css\style.css" />
+    <Content Remove="wwwroot\css\style.css.map" />
+    <Content Remove="wwwroot\css\style.scss" />
+    <Content Remove="wwwroot\css\style1.css" />
+    <Content Remove="wwwroot\fonts\fontawesome-webfont.ttf" />
+    <Content Remove="wwwroot\fonts\fontawesome-webfont.woff" />
+    <Content Remove="wwwroot\fonts\fontawesome-webfont.woff2" />
+    <Content Remove="wwwroot\images\about-img.png" />
+    <Content Remove="wwwroot\images\client1.jpg" />
+    <Content Remove="wwwroot\images\client2.jpg" />
+    <Content Remove="wwwroot\images\f1.png" />
+    <Content Remove="wwwroot\images\f2.png" />
+    <Content Remove="wwwroot\images\f3.png" />
+    <Content Remove="wwwroot\images\f4.png" />
+    <Content Remove="wwwroot\images\f5.png" />
+    <Content Remove="wwwroot\images\f6.png" />
+    <Content Remove="wwwroot\images\f7.png" />
+    <Content Remove="wwwroot\images\f8.png" />
+    <Content Remove="wwwroot\images\f9.png" />
+    <Content Remove="wwwroot\images\favicon.png" />
+    <Content Remove="wwwroot\images\hero-bg.jpg" />
+    <Content Remove="wwwroot\images\hoang_bg.jpg" />
+    <Content Remove="wwwroot\images\o1.jpg" />
+    <Content Remove="wwwroot\images\o2.jpg" />
+    <Content Remove="wwwroot\js\bootstrap.js" />
+    <Content Remove="wwwroot\js\custom.js" />
+    <Content Remove="wwwroot\js\jquery-3.4.1.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Materials\favicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Materials\favicon.ico">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\bootstrap.css" />
+    <None Include="wwwroot\css\font-awesome.min.css" />
+    <None Include="wwwroot\css\responsive.css" />
+    <None Include="wwwroot\css\style.css" />
+    <None Include="wwwroot\css\style.css.map" />
+    <None Include="wwwroot\css\style.scss" />
+    <None Include="wwwroot\css\style1.css" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.ttf" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.woff" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\images\about-img.png" />
+    <None Include="wwwroot\images\client1.jpg" />
+    <None Include="wwwroot\images\client2.jpg" />
+    <None Include="wwwroot\images\f1.png" />
+    <None Include="wwwroot\images\f2.png" />
+    <None Include="wwwroot\images\f3.png" />
+    <None Include="wwwroot\images\f4.png" />
+    <None Include="wwwroot\images\f5.png" />
+    <None Include="wwwroot\images\f6.png" />
+    <None Include="wwwroot\images\f7.png" />
+    <None Include="wwwroot\images\f8.png" />
+    <None Include="wwwroot\images\f9.png" />
+    <None Include="wwwroot\images\favicon.png" />
+    <None Include="wwwroot\images\hero-bg.jpg" />
+    <None Include="wwwroot\images\hoang_bg.jpg" />
+    <None Include="wwwroot\images\o1.jpg" />
+    <None Include="wwwroot\images\o2.jpg" />
+    <None Include="wwwroot\js\bootstrap.js" />
+    <None Include="wwwroot\js\custom.js" />
+    <None Include="wwwroot\js\jquery-3.4.1.min.js" />
+  </ItemGroup>
+
+</Project>
